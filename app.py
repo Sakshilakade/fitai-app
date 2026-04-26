@@ -209,12 +209,44 @@ st.markdown("""
         color: var(--text-dark) !important;
     }
     
+    .stNumberInput > div > div > input,
+    .stTextInput > div > div > input {
+        color: var(--text-dark) !important;
+    }
+
     .stSelectbox > div > div > div {
         border-radius: var(--radius-sm);
         padding: 12px;
         border: 2px solid var(--border-soft);
         color: var(--text-dark) !important;
         background-color: #F1F5F9;
+    }
+
+    .stSelectbox div[data-baseweb="select"] {
+        background-color: #F8FAFC !important;
+    }
+
+    .stSelectbox div[data-baseweb="select"] > div {
+        color: black !important;
+        font-weight: 500;
+        min-height: 50px !important;
+        background-color: #F8FAFC !important;
+    }
+
+    .stSelectbox div[data-baseweb="select"] > div > div,
+    .stSelectbox div[data-baseweb="select"] span,
+    .stSelectbox div[data-baseweb="select"] input {
+        color: black !important;
+        font-weight: 500 !important;
+        line-height: 1.4 !important;
+    }
+
+    .stSelectbox div[data-baseweb="select"] > div > div {
+        background-color: #F8FAFC !important;
+        padding-left: 14px !important;
+        overflow: visible !important;
+        white-space: nowrap !important;
+        text-overflow: clip !important;
     }
 
     .field-label {

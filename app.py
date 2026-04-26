@@ -27,7 +27,7 @@ st.markdown("""
         --surface: #FFFFFF;
         --border-soft: #E2E8F0;
         --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.08);
-        --shadow-hover: 0 12px 28px rgba(34, 197, 94, 0.22);
+        --shadow-hover: 0 12px 28px rgba(147, 197, 114, 0.22);
         --font-heading: 'Poppins', 'Inter', sans-serif;
         --font-body: 'Inter', 'Roboto', sans-serif;
         --space-16: 16px;
@@ -201,7 +201,7 @@ st.markdown("""
     .stTextInput > div > div > input:focus {
         border-color: var(--primary);
         background-color: var(--surface);
-        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+        box-shadow: 0 0 0 3px rgba(147, 197, 114, 0.15);
         color: var(--text-dark) !important;
     }
     
@@ -275,18 +275,18 @@ st.markdown("""
         background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
         color: white;
         border: none;
-        box-shadow: 0 6px 16px rgba(34, 197, 94, 0.25);
+        box-shadow: 0 6px 16px rgba(147, 197, 114, 0.25);
     }
 
     .stButton > button:hover {
         transform: translateY(-2px) scale(1.01);
-        box-shadow: 0 12px 24px rgba(34, 197, 94, 0.24);
+        box-shadow: 0 12px 24px rgba(147, 197, 114, 0.24);
         filter: brightness(1.03);
     }
 
     .stButton > button:active {
         transform: translateY(0) scale(0.99);
-        box-shadow: 0 6px 12px rgba(34, 197, 94, 0.18);
+        box-shadow: 0 6px 12px rgba(147, 197, 114, 0.18);
     }
     
     .primary-btn {
@@ -506,7 +506,7 @@ st.markdown("""
 
     .workout-card.recommended {
         border-color: #86EFAC;
-        box-shadow: 0 12px 26px rgba(34, 197, 94, 0.18);
+        box-shadow: 0 12px 26px rgba(147, 197, 114, 0.18);
     }
 
     .workout-card-top {
@@ -546,7 +546,7 @@ st.markdown("""
 
     .progress-fill {
         height: 100%;
-        background: linear-gradient(135deg, #22C55E 0%, #4ADE80 100%);
+        background: linear-gradient(135deg, #93C572 0%, #93C572 100%);
         border-radius: 999px;
     }
 

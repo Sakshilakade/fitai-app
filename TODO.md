@@ -1,0 +1,1 @@
+# Fix IndentationError in ml_model.py\n\n## Steps:\n1. [ ] Read ml_model.py to confirm problematic block\n2. [ ] Edit ml_model.py: Remove the entire orphaned dict starting from '\"banana smoothie\": ...' to end of image mappings (~65 lines)\n3. [ ] Verify syntax\n4. [ ] Test app.py import and run\n5. [ ] Mark complete and attempt_completion

@@ -1,0 +1,71 @@
+{
+    "users": [
+        {
+            "username": "sakshi",
+            "password": "12345",
+            "profile": {
+                "goals": null,
+                "weight_history": [],
+                "workouts_log": [
+                    {
+                        "date": "2026-04-21",
+                        "workout_type": "Strength Training",
+                        "completed_exercises": [
+                            "Squats",
+                            "Push-ups"
+                        ],
+                        "completion_rate": 1.0
+                    },
+                    {
+                        "date": "2026-04-26",
+                        "workout_type": "HIIT",
+                        "completed_exercises": [
+                            "Jumping Jacks",
+                            "Burpees",
+                            "Mountain Climbers"
+                        ],
+                        "completion_rate": 1.0
+                    },
+                    {
+                        "date": "2026-04-26",
+                        "workout_type": "Yoga",
+                        "completed_exercises": [
+                            "Session 1",
+                            "Session 2"
+                        ],
+                        "completion_rate": 1.0
+                    },
+                    {
+                        "date": "2026-04-26",
+                        "workout_type": "HIIT",
+                        "completed_exercises": [
+                            "Jumping Jacks",
+                            "Burpees",
+                            "Mountain Climbers",
+                            "High Knees"
+                        ],
+                        "completion_rate": 1.0
+                    }
+                ],
+                "streak_days": 1,
+                "total_workouts": 4,
+                "start_date": null,
+                "daily_goals": {
+                    "last_saved_date": "2026-04-26",
+                    "calories": {
+                        "current": 10,
+                        "goal": 5000.0
+                    },
+                    "steps": {
+                        "current": 677,
+                        "goal": 5000.0
+                    },
+                    "water": {
+                        "current": 5.0,
+                        "goal": 3.0
+                    }
+                }
+            }
+        }
+    ]
+}

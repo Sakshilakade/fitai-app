@@ -20,14 +20,14 @@ st.set_page_config(
 st.markdown("""
     <style>
     :root {
-        --primary: #93C572;
-        --accent: #93C572;
+        --primary: #4b6043;
+        --accent: #87ab69;
         --text-dark: #0F172A;
-        --bg-light: #F8FAFC;
-        --surface: #FFFFFF;
-        --border-soft: #E2E8F0;
-        --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.08);
-        --shadow-hover: 0 12px 28px rgba(147, 197, 114, 0.22);
+        --bg-light: #ddead1;
+        --surface: #eef4e2;
+        --border-soft: #c7ddb5;
+        --shadow-soft: 0 8px 24px rgba(75, 96, 67, 0.12);
+        --shadow-hover: 0 12px 28px rgba(75, 96, 67, 0.18);
         --font-heading: 'Poppins', 'Inter', sans-serif;
         --font-body: 'Inter', 'Roboto', sans-serif;
         --space-16: 16px;
@@ -201,7 +201,7 @@ st.markdown("""
     .stTextInput > div > div > input:focus {
         border-color: var(--primary);
         background-color: var(--surface);
-        box-shadow: 0 0 0 3px rgba(147, 197, 114, 0.15);
+        box-shadow: 0 0 0 3px rgba(75, 96, 67, 0.15);
         color: var(--text-dark) !important;
     }
     
@@ -219,18 +219,18 @@ st.markdown("""
         padding: 12px;
         border: 2px solid var(--border-soft);
         color: var(--text-dark) !important;
-        background-color: #F1F5F9;
+        background-color: #eef4e2;
     }
 
     .stSelectbox div[data-baseweb="select"] {
-        background-color: #F8FAFC !important;
+        background-color: #eef4e2 !important;
     }
 
     .stSelectbox div[data-baseweb="select"] > div {
         color: black !important;
         font-weight: 500;
         min-height: 50px !important;
-        background-color: #F8FAFC !important;
+        background-color: #eef4e2 !important;
     }
 
     .stSelectbox div[data-baseweb="select"] > div > div,
@@ -242,7 +242,7 @@ st.markdown("""
     }
 
     .stSelectbox div[data-baseweb="select"] > div > div {
-        background-color: #F8FAFC !important;
+        background-color: #eef4e2 !important;
         padding-left: 14px !important;
         overflow: visible !important;
         white-space: nowrap !important;
@@ -275,18 +275,18 @@ st.markdown("""
         background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
         color: white;
         border: none;
-        box-shadow: 0 6px 16px rgba(147, 197, 114, 0.25);
+        box-shadow: 0 6px 16px rgba(75, 96, 67, 0.25);
     }
 
     .stButton > button:hover {
         transform: translateY(-2px) scale(1.01);
-        box-shadow: 0 12px 24px rgba(147, 197, 114, 0.24);
+        box-shadow: 0 12px 24px rgba(75, 96, 67, 0.24);
         filter: brightness(1.03);
     }
 
     .stButton > button:active {
         transform: translateY(0) scale(0.99);
-        box-shadow: 0 6px 12px rgba(147, 197, 114, 0.18);
+        box-shadow: 0 6px 12px rgba(75, 96, 67, 0.18);
     }
     
     .primary-btn {
@@ -302,9 +302,9 @@ st.markdown("""
     
     .secondary-btn {
         background: none !important;
-        background-color: #ECFDF3 !important;
+        background-color: #eef4e2 !important;
         color: var(--text-dark) !important;
-        border: 1px solid #BBF7D0 !important;
+        border: 1px solid #c7ddb5 !important;
         box-shadow: none !important;
     }
     
@@ -471,27 +471,27 @@ st.markdown("""
     }
 
     .activity-tag-run {
-        background-color: #DBEAFE;
-        color: #1D4ED8 !important;
-        border-color: #BFDBFE;
+        background-color: #ddead1;
+        color: var(--primary) !important;
+        border-color: #c7ddb5;
     }
 
     .activity-tag-cycle {
-        background-color: #EDE9FE;
-        color: #6D28D9 !important;
-        border-color: #DDD6FE;
+        background-color: #a3c585;
+        color: #0F172A !important;
+        border-color: #95bb72;
     }
 
     .activity-tag-skip {
-        background-color: #FFEDD5;
-        color: #C2410C !important;
-        border-color: #FED7AA;
+        background-color: #ddead1;
+        color: #4b6043 !important;
+        border-color: #c7ddb5;
     }
 
     .activity-tag-default {
-        background-color: #DCFCE7;
-        color: #166534 !important;
-        border-color: #BBF7D0;
+        background-color: #eef4e2;
+        color: var(--primary) !important;
+        border-color: #c7ddb5;
     }
 
     .workout-card {
@@ -506,7 +506,7 @@ st.markdown("""
 
     .workout-card.recommended {
         border-color: #86EFAC;
-        box-shadow: 0 12px 26px rgba(147, 197, 114, 0.18);
+        box-shadow: 0 12px 26px rgba(75, 96, 67, 0.18);
     }
 
     .workout-card-top {
@@ -527,9 +527,9 @@ st.markdown("""
     }
 
     .recommended-tag {
-        background: #DCFCE7;
-        color: #166534 !important;
-        border: 1px solid #86EFAC;
+        background: #ddead1;
+        color: var(--primary) !important;
+        border: 1px solid #95bb72;
         border-radius: var(--radius-lg);
         padding: 4px 10px;
         font-size: 12px;
@@ -539,14 +539,14 @@ st.markdown("""
     .progress-track {
         width: 100%;
         height: 8px;
-        background: #E2E8F0;
+        background: #ddead1;
         border-radius: 999px;
         overflow: hidden;
     }
 
     .progress-fill {
         height: 100%;
-        background: linear-gradient(135deg, #93C572 0%, #93C572 100%);
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
         border-radius: 999px;
     }
 
@@ -559,7 +559,7 @@ st.markdown("""
     }
 
     .dashboard-premium {
-        background: var(--surface);
+        background: #eef4e2;
         border: 1px solid var(--border-soft);
         border-radius: var(--radius-md);
         box-shadow: var(--shadow-soft);
@@ -590,7 +590,7 @@ st.markdown("""
     }
 
     .dashboard-premium-title span {
-        color: #64748B !important;
+        color: #475569 !important;
         font-size: 13px;
         white-space: nowrap;
     }
@@ -602,7 +602,7 @@ st.markdown("""
     }
 
     .daily-stat-card {
-        background: #F8FAFC;
+        background: var(--surface);
         border: 1px solid var(--border-soft);
         border-radius: var(--radius-sm);
         padding: 12px;
@@ -643,7 +643,7 @@ st.markdown("""
     .daily-progress-track {
         width: 100%;
         height: 6px;
-        background: #E2E8F0;
+        background: #ddead1;
         border-radius: 999px;
         overflow: hidden;
     }
@@ -651,7 +651,7 @@ st.markdown("""
     .daily-progress-fill {
         height: 100%;
         border-radius: 999px;
-        background: linear-gradient(90deg, #93C572, #93C572);
+        background: linear-gradient(90deg, var(--primary), var(--accent));
         transition: width 0.3s ease;
     }
 
@@ -672,7 +672,7 @@ st.markdown("""
         border-radius: 50%;
         display: grid;
         place-items: center;
-        background: conic-gradient(var(--primary) calc(var(--progress) * 1%), #E2E8F0 0);
+        background: conic-gradient(var(--primary) calc(var(--progress) * 1%), #ddead1 0);
         box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
     }
 
@@ -731,7 +731,7 @@ st.markdown("""
         height: 8px;
         border-radius: 999px;
         margin-top: 10px;
-        background: #E2E8F0;
+        background: #ddead1;
         overflow: hidden;
     }
 
@@ -777,43 +777,43 @@ st.markdown("""
     }
     
     .meal-time {
-        background-color: #DBEAFE;
-        color: #1D4ED8;
+        background-color: #ddead1;
+        color: #4b6043;
         padding: 5px 12px;
         border-radius: var(--radius-lg);
         font-size: 12px;
         font-weight: 500;
         min-width: 84px;
         text-align: center;
-        border: 1px solid #BFDBFE;
+        border: 1px solid #c7ddb5;
     }
 
     .meal-time-breakfast {
-        background-color: #FFEDD5;
-        color: #C2410C !important;
-        border-color: #FED7AA;
+        background-color: #c7ddb5;
+        color: #0F172A !important;
+        border-color: #95bb72;
     }
 
     .meal-time-lunch {
-        background-color: #DBEAFE;
-        color: #1D4ED8 !important;
-        border-color: #BFDBFE;
+        background-color: #95bb72;
+        color: #0F172A !important;
+        border-color: #87ab69;
     }
 
     .meal-time-dinner {
-        background-color: #EDE9FE;
-        color: #6D28D9 !important;
-        border-color: #DDD6FE;
+        background-color: #87ab69;
+        color: #0F172A !important;
+        border-color: #75975e;
     }
 
     .meal-time-snack {
-        background-color: #DCFCE7;
-        color: #166534 !important;
-        border-color: #BBF7D0;
+        background-color: #a3c585;
+        color: #0F172A !important;
+        border-color: #95bb72;
     }
 
     .meal-time-default {
-        background-color: #F1F5F9;
+        background-color: #eef4e2;
         color: #334155 !important;
         border-color: #CBD5E1;
     }
@@ -848,7 +848,7 @@ st.markdown("""
 
     .tip-item:hover {
         transform: translateX(2px);
-        background-color: #F8FAFC;
+        background-color: #eef4e2;
     }
     
     .tip-item:last-child {
@@ -1047,11 +1047,11 @@ st.markdown("""
     }
     
     ::-webkit-scrollbar-track {
-        background: #E2E8F0;
+        background: #ddead1;
     }
     
     ::-webkit-scrollbar-thumb {
-        background: #94A3B8;
+        background: #658354;
         border-radius: 3px;
     }
     </style>
@@ -1392,8 +1392,6 @@ def show_features():
         if st.button("📊 Progress Tracking", key="features_progress_tracking", use_container_width=True):
             st.session_state.page = "progress"
             st.rerun()
-        if st.button("🏃 Fitness Tracker", key="features_fitness_tracker", disabled=True, use_container_width=True):
-            st.info("🚧 Coming Soon!")
 
 
 def show_generate_plan():
@@ -1595,7 +1593,7 @@ def show_generate_plan():
 
         workout_html = (
             '<div class="card">'
-            f'<p style="color:#93C572; font-weight:500; margin:0;">{workout_type}</p>'
+            f'<p style="color:var(--primary); font-weight:500; margin:0;">{workout_type}</p>'
             '</div>'
         )
         st.markdown(workout_html, unsafe_allow_html=True)

@@ -113,7 +113,11 @@ VEG_MEAL_PLANS = {
             "Greek yogurt with nuts",
             "Protein shake (veg)",
             "Brown rice with dal",
-            "Mixed veg curry + roti"
+            "Mixed veg curry + roti",
+            "Moong dal chilla",
+            "Vegetable poha",
+            "Paneer tikka salad",
+            "Fruit and nut lassi"
         ]
     },
 
@@ -129,7 +133,11 @@ VEG_MEAL_PLANS = {
             "Milk with almonds",
             "Protein shake",
             "Soy chunks curry",
-            "Dal + rice + ghee"
+            "Dal + rice + ghee",
+            "Paneer tikka",
+            "Spinach dal",
+            "Chana masala",
+            "Curd rice"
         ]
     },
 
@@ -145,7 +153,11 @@ VEG_MEAL_PLANS = {
             "Buttermilk",
             "Light dal soup",
             "Steamed vegetables",
-            "Whole wheat roti + sabzi"
+            "Whole wheat roti + sabzi",
+            "Cucumber salad",
+            "Sprouts chaat",
+            "Mint coriander chutney",
+            "Vegetable dalia"
         ]
     }
 
@@ -164,7 +176,11 @@ NONVEG_MEAL_PLANS = {
             "Protein shake",
             "Chicken quinoa bowl",
             "Boiled eggs + toast",
-            "Chicken soup"
+            "Chicken soup",
+            "Egg bhurji",
+            "Tandoori chicken skewers",
+            "Fish tikka",
+            "Masala omelette"
         ]
     },
 
@@ -180,7 +196,11 @@ NONVEG_MEAL_PLANS = {
             "Boiled eggs",
             "Protein shake with milk",
             "Chicken biryani (controlled portion)",
-            "Egg bhurji + roti"
+            "Egg bhurji + roti",
+            "Mutton stew",
+            "Egg curry",
+            "Tandoori fish",
+            "Chicken kebab"
         ]
     },
 
@@ -196,7 +216,11 @@ NONVEG_MEAL_PLANS = {
             "Light chicken curry",
             "Fish + steamed vegetables",
             "Egg toast",
-            "Chicken sandwich (light)"
+            "Chicken sandwich (light)",
+            "Fish fry",
+            "Tuna salad",
+            "Chicken shawarma wrap",
+            "Egg bhurji"
         ]
     }
 
@@ -215,7 +239,11 @@ VEGAN_MEAL_PLANS = {
             "Vegan protein shake",
             "Brown rice + vegetables",
             "Fruit bowl",
-            "Soy milk smoothie"
+            "Soy milk smoothie",
+            "Sprouts salad",
+            "Vegetable poha",
+            "Moong dal chilla",
+            "Coconut water"
         ]
     },
 
@@ -231,7 +259,11 @@ VEGAN_MEAL_PLANS = {
             "Kidney beans (rajma)",
             "Quinoa salad",
             "Oats + nuts",
-            "Brown rice + dal"
+            "Brown rice + dal",
+            "Rajma masala",
+            "Chole bhature (portion controlled)",
+            "Vegetable khichdi",
+            "Soya chaap curry"
         ]
     },
 
@@ -247,7 +279,11 @@ VEGAN_MEAL_PLANS = {
             "Fruit bowl",
             "Lemon water + nuts",
             "Light dal soup",
-            "Veg sandwich (no butter)"
+            "Veg sandwich (no butter)",
+            "Cucumber raita",
+            "Moong dal salad",
+            "Sprouts chaat",
+            "Carrot-cucumber sticks"
         ]
     }
 
@@ -256,9 +292,12 @@ VEGAN_MEAL_PLANS = {
 def _interleave_meals(veg_meals, nonveg_meals):
     """Return a mixed meal list with alternating veg and non-veg items."""
     mixed = []
-    for veg_item, nonveg_item in zip(veg_meals, nonveg_meals):
-        mixed.append(veg_item)
-        mixed.append(nonveg_item)
+    max_len = max(len(veg_meals), len(nonveg_meals))
+    for i in range(max_len):
+        if i < len(veg_meals):
+            mixed.append(veg_meals[i])
+        if i < len(nonveg_meals):
+            mixed.append(nonveg_meals[i])
     return mixed
 
 

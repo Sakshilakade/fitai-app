@@ -20,8 +20,8 @@ st.set_page_config(
 st.markdown("""
     <style>
     :root {
-        --primary: #22C55E;
-        --accent: #4ADE80;
+        --primary: #93C572;
+        --accent: #93C572;
         --text-dark: #0F172A;
         --bg-light: #F8FAFC;
         --surface: #FFFFFF;
@@ -651,7 +651,7 @@ st.markdown("""
     .daily-progress-fill {
         height: 100%;
         border-radius: 999px;
-        background: linear-gradient(90deg, #22C55E, #4ADE80);
+        background: linear-gradient(90deg, #93C572, #93C572);
         transition: width 0.3s ease;
     }
 
@@ -1451,7 +1451,7 @@ def show_generate_plan():
     render_icon_label('<i class="fa-solid fa-utensils"></i>', "Diet")
     diet = st.selectbox(
         "Diet Preference",
-        ["Veg", "Non-Veg", "Vegan"],
+        ["Veg", "Non-Veg", "Vegan", "Veg + Non-Veg"],
         label_visibility="collapsed"
     )
 
@@ -1595,7 +1595,7 @@ def show_generate_plan():
 
         workout_html = (
             '<div class="card">'
-            f'<p style="color:#22C55E; font-weight:500; margin:0;">{workout_type}</p>'
+            f'<p style="color:#93C572; font-weight:500; margin:0;">{workout_type}</p>'
             '</div>'
         )
         st.markdown(workout_html, unsafe_allow_html=True)
